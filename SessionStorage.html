@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1>Session Storage</h1>
+<p><button onclick="incrementCounter()" type="button">CLICK</button> </p>
+<p id="demo"></p>
+<script>
+    function incrementCounter()
+    {
+        if(sessionStorage.clickcount)
+        {
+            sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+        }
+        else{
+            sessionStorage.clickcount=1;
+        }
+        document.getElementById("demo").innerHTML = sessionStorage.clickcount +" close the browser the count doesnt get stored"
+    }
+</script>
+</body>
+</html> 
