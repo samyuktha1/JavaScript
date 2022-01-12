@@ -2,7 +2,7 @@
 const printName =(name)=>"Hi"+name;
 //console.log(printName("samyu"))
 
-const printBill=(name,bill)=>"Hey "+name+" Please pay"+"$"+bill;
+const printBill=(name,bill)=>"Hey ${name}  Please pay ${bill};
 //console.log(printBill("Samyu",200))
 
 const person={
