@@ -6,6 +6,4 @@ function sum1(sum,z)
 {
     return sum+z;
 }
-var add=sum(5,7);
-var third=sum1(add,3);
-console.log(third)
+console.log(sum1(sum(5,6),3))
