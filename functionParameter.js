@@ -1,9 +1,10 @@
-function sum(x,y)
+function inner(value)
 {
-    return x+y;
+return "Hello "+value;
 }
-function sum1(sum,z)
+
+function outer(a,func)
 {
-    return sum+z;
+console.log(func(a))
 }
-console.log(sum1(sum(5,6),3))
+outer('Samyu',inner)
